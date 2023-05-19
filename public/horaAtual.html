@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+        html {
+          background-color: #333;
+          color: #eee;
+          font-size: 5rem;
+        }
+    </style>
+    <script>
+      function atualizarHora() {
+        window.document.querySelector('span').textContent = new Date().toLocaleTimeString('pt-BR');
+      }
+      setInterval(atualizarHora, 1000);
+    </script>
+  </head>
+  <body>
+    <strong>Hora certa:</strong>
+    <span></span>
+  </body>
+</html>
